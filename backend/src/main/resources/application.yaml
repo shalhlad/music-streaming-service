@@ -8,3 +8,16 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+jwt:
+  access-token:
+    secret: some_access_token_secret
+    expiration-time: 3600000     # 1 hour
+
+  refresh-token:
+    secret: some_refresh_token_secret
+    expiration-time: 2592000000  # 30 days
